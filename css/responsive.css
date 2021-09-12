@@ -1,0 +1,40 @@
+
+/* This is media query for tablets  */
+@media screen and (max-width: 1200px){
+  
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 900px){ 
+   
+    .top-info ul li {
+        list-style:none;
+        font-size:10px;
+        
+      }
+      #main-nav{
+        display: none;
+    }
+      .openbtn{
+        display: unset;
+    }
+    .logo-container{
+        margin-left: 10px;
+    }
+
+    .about-section-container{
+        flex-wrap:wrap;
+    }
+    .about-content-container{
+        margin:15px;
+      }
+      .vision-objective-container{
+          flex-wrap: wrap;
+          margin:15px;
+      }
+      .footer-container{
+          flex-wrap: wrap;
+          flex-direction: column;
+          padding:50px;
+      }
+}
