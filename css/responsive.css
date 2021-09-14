@@ -9,7 +9,7 @@
    
     .top-info ul li {
         list-style:none;
-        font-size:10px;
+        font-size:15px;
         
       }
       #main-nav{
@@ -28,13 +28,39 @@
     .about-content-container{
         margin:15px;
       }
-      .vision-objective-container{
-          flex-wrap: wrap;
-          margin:15px;
-      }
       .footer-container{
           flex-wrap: wrap;
           flex-direction: column;
           padding:50px;
       }
+     .footer-logo{
+         width:10em;
+         height: auto;
+     }
+     .message-founder-container{
+        flex-wrap: wrap;
+    }
+     
+}
+
+@media screen and (max-width: 600px){
+    .vision-objective-container{
+        flex-wrap: wrap;
+    } 
+    .gallery-images{
+        flex-direction: column;
+    }
+    .message-founder-image{
+        height: 400px;
+    }
+   .contact-container{
+       flex-wrap:wrap;
+   }
+   .map{
+    flex-basis:100%;
+  }
+  .contact-form{
+    flex-basis:100%;
+  }
+
 }

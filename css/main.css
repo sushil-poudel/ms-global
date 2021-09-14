@@ -1,25 +1,4 @@
-/* General css */
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-body{
-  font-family: "VAG Rounded Next",sans-serif;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-}
-
-
-li{
-  list-style:none;
-}
-a{
-  text-decoration: none;
-}
+@import 'https://fonts.googleapis.com/css?family=Libre+Franklin:400,700';
 /* styling top bar */
 
 .top-header-container{
@@ -28,11 +7,9 @@ a{
   justify-content:center;
   align-items:center;
   margin:auto;
-  background: linear-gradient(to right, #00c6fb 0%, #005bea 100%);
- 
-
+  /* background: linear-gradient(to right, #00c6fb 0%, #005bea 100%); */
+  background:#002147;
 }
-
 
 .top-info ul{
   display: flex; 
@@ -41,10 +18,12 @@ a{
 .top-info ul li {
   list-style:none;
   margin-right:30px;
+  padding: 10px;
 }
 .top-info ul li a{
   text-decoration:none;
   color:white;
+  margin:20px;
 }
 .facebook-icon{
   font-size:25px;
@@ -64,36 +43,36 @@ a{
   height: 100px;
   margin-left:120px;
 }
-.logo-container img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-#main-nav{
+
+#main-nav{  
   margin-left:200px;
 }
-#main-nav ul li {
- margin-left:30px;
-  
-}
+
+
 
 #main-nav a {
-  color:black;
+  
   width: 100%;  
   background: white;
-  font-family: "Poppins", sans-serif;
-  font-size:1 rem;
+  font-family: "Poppins", sans-serif; 
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: background 0.4s;
   text-transform: uppercase;
+  color:black;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: relative;
+  padding: 9px 15px;
+  transition: all 0.3s ease;
 
 }
 #main-nav a:hover {
-  background-color: #005bea ;
-  color:white;
+  
+  /* color: #005bea; */
+  color:blue;
 }
 
 
@@ -265,17 +244,36 @@ color:white;
   position: relative;
   margin: auto;
  
+ 
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  
+}
+.myslides:after{
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(
+32deg, rgb(14, 13, 13), rgba(95, 91, 91, 0));
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left:0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+
+
 }
 .myslides img{
   height: 100%;
   width: 100%;
   object-fit: cover;
+ 
 }
+
 
 
 /* Next & previous buttons */
@@ -350,34 +348,14 @@ color:white;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .7}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .7}
   to {opacity: 1}
 }
-
-/* Styling cover page */
-.cover-page {
-  position: relative;
-  z-index: -1;
-  height: 300px;
-  width: 100%;
-  text-align: center;
-  padding-top:130px;
-  color: white;
-  overflow: hidden;
-  background: #1e2cf5;  /* fallback for old browsers */
-  background: linear-gradient(rgba(233, 231, 245, 0.8), #699cf0 100%), url("https://ik.imagekit.io/ikmedia/blog/hero-image.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.cover-page  h1{
-  font-size: 35px;
-}
-
 
 /* Embedding video from youtube and writting about section */
 
@@ -390,8 +368,8 @@ color:white;
 }
 
 .wrapper {
-  width: 100%;
-  height: 100%;
+  width: 400em;
+  height: auto;
   margin: 0 auto;
   background: #ffffff;
 }
@@ -403,9 +381,9 @@ color:white;
 }
 
 .h_iframe .ratio {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .h_iframe iframe {
@@ -416,13 +394,111 @@ color:white;
   height: 100%;
 }
 
-  .about-content-container{
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-  }
-  .about-content-container h2{
-    margin:20px 0;
-  }
+/* Styling vision and objective section */
+
+.vision-objective-container{
+  display: flex;
+  gap:40px;
+
+}
+
+.vision-objective-container p{
+  text-align:left;
+}
+
+.icon{
+  font-size: 50px;
+  color:#002147;
+  float:right;
+  margin-right:20px;
+}
+
+
+/* styling gallery cover photo 2 */
+.banner-image-section{
+  background-image: url(../img/gallery/classrooms/computer-lab.jpg);
+  height: 25em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner-image-section:after {
+  content: '';
+  position: absolute;
+  background: #1e2cf5;  /* fallback for old browsers */
+  background: linear-gradient(rgba(233, 231, 245, 0.8), #699cf0 100%), url("https://ik.imagekit.io/ikmedia/blog/hero-image.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+}
+.banner-image-section .custom-container{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.inner{
+  max-width: 1235px;
+  display: inline-block;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+.section-title{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  padding:5px;
+}
+
+/* Styling the Message from founder section  */
+.message-founder-container{
+  display: flex;
+  flex-direction: row;
+  gap:2em;
+}
+.message-founder-image{
+  width:200%;
+  height: auto; 
+  
+}
+.message-founder-content{
+  box-shadow:10px 15px 30px rgb(0 0 0 / 18%);
+  padding: 20px;
+}
+/* .message-founder-container{
+  display:flex;
+  align-items: center; 
+}
+
+.message-founder-image{
+flex-basis:48%;
+position:relative;
+height: 40em;
+}
+
+.message-founder-content{
+  flex-basis:40%;
+box-shadow: 10px 15px 30px rgb(0 0 0 / 18%);
+border-radius:10px;
+padding:20px;
+position: absolute;
+
+background-color: white;
+} */
 
 /* styling the box-container */
 .box-container{
@@ -436,162 +512,43 @@ color:white;
   margin-left:50%;
 }
 
-.nav-content-heading{
-  background-color: #002147;
-  color:white;
-}
-.nav-content{
-  margin:20px;
-  padding-bottom:10px;
-  border-bottom: 1px solid rgb(214 206 206 / 50%);
-  
-}
-.nav-content a {
-  color:black;
-  
-}
 
-/* Styling vision and objective section */
-
-.vision-objective-container{
-  display: flex;
-  gap:40px;
-
-}
-
- .vision{
-  font-size: 14px;
-  letter-spacing: 0.2px;
-  height:300px;
-  align-items: center;
-  border-radius:12px;
-  border-color: #002147;
-  background-color: #c5c5c524;
-} 
-.vision-objective-container h2{
-  margin:25px;
-}
-.vision-objective-container p{
-  text-align:center;
-}
-.objective{
-  font-size: 14px;
-  letter-spacing: 0.2px;
-
-  border-radius:12px;
-  border-color: #002147;
-  background-color: #c5c5c524;
-} 
-
-
-.icon{
-  font-size: 60px;
-  color:#002147;
-  float:right;
-  margin-right:20px;
-}
 
 /* Styling the gallery-container */
 
-  .gallery-container{
-    margin:0 120px 120px 120px;
-
-  }
-  .gallery-heading{
-    text-align:center;
-    margin:50px;
-    padding:30px; 
-  }
-
-  .gallery-images{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    
-  }
-  .gallery-image{
-    flex-basis:32%;
-  }
-  .gallery-image img{
-    border-radius: 5%;
-  }
-
-.testimonial-heading{
+.gallery-heading{
   text-align:center;
-  margin:50px;
+  margin:30px;
+  padding:10px; 
 }
 
-.testimonial-content{
-  margin:10px;
-}
-
-.testimonial-content-container{
-
-  display:flex; 
-  justify-content: space-between;
-  align-items:center;
-}
-
-.testimonial-content{
- 
-  box-shadow: 10px 15px 30px rgb(0 0 0 / 18%);
-}
-.student-thought{
- 
-  background-color:#dff1ff;
-  height: 200px;
-  text-align:center;
-  padding:40px;
-
-}
-.student-details img{
-  width:5rem;
-  border-radius:50%;
-  display: block;
-  margin:auto;
+.gallery-images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-inline: 0 auto;
   
 }
-.student-details p{
-text-align:center;
-
+.gallery-images a{
+  flex-basis:32%;
+  box-shadow: 0 3px 5px #000;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
-/* Styling the Message from founder section  */
-
-.message-founder-container{
-  display:flex;
-
-  justify-content: space-between;
-  align-items: center;
-  margin:120px;
-  
-  
+.gallery-image img{
+  border-radius: 5px;
+  transition: all 0.2s linear;
+  border-style:none;
+  vertical-align: middle;
 }
-.message-founder-image{
 
-position:relative;
-
-}
-.message-founder-image img{
-  border-radius:10px;
-}
-.message-founder-content{
-box-shadow: 10px 15px 30px rgb(0 0 0 / 18%);
-border-radius:10px;
-padding:20px;
-height: 400px;
-max-width:500px;
-position: absolute;
-margin-left: 600px;
-background-color: white;
-}
-.read-more{
-  font-family: 'Courier New', Courier, monospace;
-  font-size:15px;
-  border-radius:15px;
-  padding:10px;
-  background-color: white;
-  
+.gallery-images a img:hover{
+  transform: scale(1.2);
+  cursor:pointer;
 }
 
 /* Styling the footer section  */
@@ -643,50 +600,43 @@ display: flex;
 
 
 /* Styling connect with us form/ contact form  */
-
-.connect-with-us-section{
-margin:120px;
+  
+.contact-container{
+  font-family: "Libre Franklin", sans-serif;
+display: flex;
+gap:80px;
+align-items: center;
 }
-.connect-with-us-container{
-  box-shadow: 10px 15px 30px rgb(0 0 0 / 20%);
-  border:none;
+.map{
+  flex-basis:50%;
 }
-.connect-with-us-heading{
-  text-align:center;
-  margin:20px;
-  text-transform: uppercase;
-
-
-}
-label{
-  text-transform: uppercase;
-  margin:20px;
-  line-height: 60px;
-  font-size:15px;
+.contact-form{
+  flex-basis:50%;
+  text-align:left;
+  
 }
 
-input{
-  font-size:15px;
-  padding:10px;
+.contact-form .form input,.contact-form .form textarea{
+  width: 350px;
+  padding: 3%;
+  margin: 2% ;
+  color: #242424;
+  border: 1px solid #B7B7B7;
 }
-
+.contact-form .form input::placeholder,.contact-form .form textarea::placeholder{
+  color:#242424;
+}
 input ::placeholder{
-font-size: 10px ;
-}
-.submit{
-  margin:10px 100px;
-  padding: 10px 20px;
-  background-color: #86BC42;
-  color: #fff;
-  font-size:large;
-}
+  font-size: 10px ;
+  width: 100px;
+  }
 
 
-
-
-
-
-
-
-
-
+  .submit{
+    margin:10px 100px;
+    padding: 10px 20px;
+    background-color: #86BC42;
+    color: #fff;
+    font-size:large;
+  }
+ 

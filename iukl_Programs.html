@@ -1,9 +1,19 @@
 <html>
     <head>
         <title> MS Global </title>
-        <link rel="stylesheet" href="css/main.css">
+ 
 
+        <!-- Adding meta viewport  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <!-- Main css of the project -->
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- Css for responsive  -->
+        <link rel="stylesheet" href="css/responsive.css">
+
         <!-- Google Icon -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -25,8 +35,8 @@
   <div class="top-info">
     <ul>
       <li><a href="#">Baneshwor, Kathmandu Nepal</a></li>
-      <li><a href="#">sample@gmail.com</a></li>
-      <li><a href="#">+977 9803880421</a></li>
+      <li><a href="#">bikalp@gmail.com </a></li>
+      <li><a href="#">bikalp@msforexpansion.com </a></li>
       <li><a href="#"><i class="fab fa-facebook facebook-icon"></i></a></li>
 
     </ul>
@@ -34,103 +44,98 @@
 </div>
 
 
-
 <!-- Main Header navigation -->
 <div class="main-nav-container">
-    <div class="logo-container">
-      <img src="img/logo/other logos/logo1.png" alt="logo">
-    </div>
-    <nav id="main-nav">
-    
-      <ul>
-       
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="#">Our Projects
-            <i class="fas fa-angle-down arrow"></i>
-          </a>
-            <ul class="submenu">
-              <li>
-                <a href="iukl_Programs.html">IUKL Programs
-                  
-                  <i class="fas fa-angle-right arrow"></i>
-                </a>
-                <ul class="submenu-2">
-                  <li>
-                    <a href="#">MBA</a>
-                  </li>
-                  <li>
-                    <a href="#">BIT</a>
-                  </li>
-                  <li>
-                    <a href="#">BBA</a>
-                  </li>
-                  <li>
-                    <a href="#">MIT</a>
-                  </li>
-                  <li>
-                    <a href="#"> PhD</a>
-                  </li>
-                  <li>
-                    <a href="#">Student Exchange Program</a>
-                  </li>
-                </ul>
-            </li>
-              <li>
-                <a href="cima-program.html">CIMA UK Program </a>
-              </li>
-              <li>
-                <a href="must_programs.html">MUST Programs
-                  
-                  <i class="fas fa-angle-right arrow"></i>
-                </a>
-                <ul class="submenu-2">
-                  <li>
-                    <a href="#">MBA</a>
-                  </li>
-                  <li>
-                    <a href="#">BIT</a>
-                  </li>
-                 
-                </ul>
-            </li>
-          </ul>
-        </li>
-  
-        <li>
-          <a href="gallery.html">Gallery
-            <i class="fas fa-angle-down arrow"></i>
-          </a>
-          <ul class="submenu">
-            <li>
-              <a href="#">Image Gallery</a>
-            </li>
-            <li>
-              <a href="#">Video Gallery</a>
-            </li>
-          </ul>
-      </li>
-        <li>
-          <a href="message-from-founder.html">Message From Founder</a>
-        </li>
-        <li > 
-          <button >
-            <a class="connect-with-us" href="#">Connect With Us</a>
-          </button> 
-        </li>
-      </ul>
-    </nav>
+  <div class="logo-container">
+    <img src="img/logo/other logos/logo1.png" alt="logo">
   </div>
 
+  <nav id="main-nav">
+  
+    <ul>
+     
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="#">Our Projects
+          <i class="fas fa-angle-down arrow"></i>
+        </a>
+          <ul class="submenu">
+            <li>
+              <a href="iukl_Programs.html">IUKL Programs
+                
+                <i class="fas fa-angle-right arrow"></i>
+              </a>
+              <ul class="submenu-2">
+                <li>
+                  <a href="#"> IUKL Program in Sunway International Business School </a>
+                </li>
+                <li>
+                  <a href="#">IUKL Program in Himalayan College of Management </a>
+                </li>
+                <li>
+                  <a href="#"> IUKL Ph.D. Program in South Western Centre of Ph.D. Studies, Kathmandu, Nepal</a>
+                </li>
+                <li>
+                  <a href="#">IUKL Students Exchange Program with Uniglobe College of Management, Kathmandu, Nepal </a>
+                </li>
+                <li>
+                  <a href="#"> PhD</a>
+                </li>
+                <li>
+                  <a href="#">Student Exchange Program</a>
+                </li>
+              </ul>
+          </li>
+            <li>
+              <a href="cima-program.html">CIMA UK Program </a>
+            </li>
+            <li>
+              <a href="must_programs.html">MUST Programs
+                
+                <i class="fas fa-angle-right arrow"></i>
+              </a>
+              <ul class="submenu-2">
+                <li>
+                  <a href="#">MBA</a>
+                </li>
+                <li>
+                  <a href="#">BIT</a>
+                </li>
+               
+              </ul>
+          </li>
+        </ul>
+      </li>
 
-<!-- coverphoto  -->
-<section class="cover-page">
-    <h4>Home > IUKL Programs</h4>
-      <h1>IUKL Programs</h1>
-      
-  </section>
+      <li>
+        <a href="gallery.html">Gallery</a>  
+      </li>
+      <li class="">
+        <a href="index.html">Message From Founder</a>
+      </li>
+      <div class="contact-button" onclick="window.location.href = 'contact.html'">  Contact Us </div>
+    </ul>
+    
+  </nav>
+
+      <!-- Mobile-view-Navigation -->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">HOME</a>
+      <a href="#">OUR PROJECT</a>
+      <a href="#">GALLERY</a>
+      <a href="#">MESSAGE FROM FOUNDER</a>
+      <a href="#">CONNECT WITH US</a>
+    </div>
+
+    <div id="main-button">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+</div>
+
+
 
   <section class="iukl-section">
     <div class="iukl-descriptions">
