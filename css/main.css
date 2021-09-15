@@ -154,7 +154,7 @@
   top: 0;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  z-index: 10;
 }
 .connect-with-us{
 
@@ -466,7 +466,7 @@ color:white;
   max-width: 1235px;
   display: inline-block;
   text-align: center;
-  z-index: 2;
+  z-index: 1;
   position: relative;
 }
 .section-title{
@@ -474,6 +474,7 @@ color:white;
   font-size: 20px;
   font-weight: bold;
   padding:5px;
+ 
 }
 
 /* Styling the Message from founder section  */
