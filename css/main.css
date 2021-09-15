@@ -27,10 +27,10 @@
 }
 .facebook-icon{
   font-size:25px;
- 
 }
 /* Styling Main header navigation  */
-.main-nav-container{
+#maincontainer{
+  
   display:flex;
   justify-content: space-between;
   align-items: center;
@@ -112,12 +112,14 @@
   display: flex;
   flex-direction: column;
   position: absolute;
+  width:200px;
   
  
 }
 
 .submenu li {
   position: relative;
+  
 
 }
 
@@ -135,7 +137,8 @@
   position: absolute;
   top: 0px;
   left: 100%;
-  width: 150px;
+  width:300px;
+
 }
 
 .arrow {
@@ -144,6 +147,13 @@
   font-size: 12px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
 .connect-with-us{
 
 border-radius:10px;
