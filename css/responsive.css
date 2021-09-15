@@ -6,6 +6,11 @@
 
 /* Media query for mobile */
 @media screen and (max-width: 900px){ 
+    .custom-container {
+        padding: 60px 100px;
+        max-width: 1500px;
+        margin: auto;
+      }
    
     .top-info ul li {
         list-style:none;
@@ -44,6 +49,25 @@
 }
 
 @media screen and (max-width: 600px){
+    .custom-container {
+        padding:50px 30px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .top-info{
+          display: none;
+      }
+    .top-info ul li {
+        list-style:none;
+        font-size:10px;
+        padding:3px;
+        
+      }
+      .h_iframe {
+        position: relative;
+        height: 600px;
+    
+      }
     .vision-objective-container{
         flex-wrap: wrap;
     } 

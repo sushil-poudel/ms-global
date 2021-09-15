@@ -37,6 +37,7 @@
   text-align: center;
   box-shadow: 10px 15px 30px rgb(0 0 0 / 5%);
   width:100%;
+ 
 
 }
 .logo-container{
@@ -390,6 +391,7 @@ color:white;
   position: relative;
 
 
+
 }
 
 .h_iframe .ratio {
@@ -491,6 +493,8 @@ color:white;
 .message-founder-content{
   box-shadow:10px 15px 30px rgb(0 0 0 / 18%);
   padding: 20px;
+  text-align:center;
+  margin:auto;
 }
 /* .message-founder-container{
   display:flex;
